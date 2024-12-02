@@ -1,0 +1,25 @@
+/* Цвета для статей */
+
+.article {
+  &:hover {
+    border: 1px solid rgb(255, 58, 58);
+  }
+
+  &.odd {
+    background-color: rgb(39, 39, 39);
+    color: white;
+  }
+
+  &.even {
+    background-color: rgb(99, 99, 255);
+    color: white;
+  }
+
+  /* Стиль для первой буквы статьи */
+  .MuiAccordionDetails-root {
+    p::first-letter {
+      font-size: 2em;
+      color: rgb(255, 58, 58);
+    }
+  }
+}
